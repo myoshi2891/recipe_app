@@ -1,0 +1,25 @@
+{
+  "name": "recipe_app",
+  "version": "1.0.0",
+  "description": "recipe application",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myoshizumi/recipe_app.git"
+  },
+  "author": "Mitsuru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myoshizumi/recipe_app/issues"
+  },
+  "homepage": "https://github.com/myoshizumi/recipe_app#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.52.1"
+  }
+}
