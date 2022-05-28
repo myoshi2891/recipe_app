@@ -9,14 +9,9 @@ import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 
-
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import recipeView from './views/recipeView.js';
-
-// if (module.hot) {
-// module.hot.accept();
-// }
 
 const controlRecipes = async function () {
   try {
@@ -71,7 +66,6 @@ const controlAddRecipe = async function (newRecipe) {
   try {
 
     addRecipeView.renderSpinner();
-    // console.log(newRecipe);
     await model.uploadRecipe(newRecipe)
     console.log(model.state.recipe);
 
@@ -90,7 +84,6 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 }
-
 
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);

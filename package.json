@@ -2,10 +2,10 @@
   "name": "recipe_app",
   "version": "1.0.0",
   "description": "recipe application",
-  "main": "index.js",
+  "default": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
